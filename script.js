@@ -9,7 +9,6 @@ const showQuiz = async () => {
   quizs.forEach((quiz, index) => {
     const box = document.createElement("div");
     const question = document.createElement("h1");
-    question.className = "text-[18px]";
     question.textContent = quiz.question;
     box.appendChild(question);
     box.className = "";
