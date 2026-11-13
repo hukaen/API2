@@ -2,7 +2,6 @@ const API =
   "https://menu-api.parent-content-parent-content-service.workers.dev/quiz";
 const body = document.getElementById("body");
 const showQuiz = async (type) => {
-  body.value = "";
   const response = await fetch(API + type);
 
   const quizs = await response.json();
